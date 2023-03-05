@@ -1,0 +1,30 @@
+{
+  "Munchies": {
+    "items": {
+      "#kkeb": ["Kurkure", "10", "20"],
+      "#wdkwd": ["Bhel Puri", "30", "20"],
+      "#3kwen": ["Cheeze Maggi", "30", "30"]
+    }
+  },
+  "Snacks": {
+    "items": {
+      "#kkeb": ["Bun Samosa", "30", "20"],
+      "#wdkwd": ["Burger", "40", "20"],
+      "#3kwen": ["Paneer Roll", "50", "30"]
+    }
+  },
+  "Dessert": {
+    "items": {
+      "#kkeb": ["Honey Cake", "30", "20"],
+      "#wdkwd": ["Choco Lava Cake", "50", "20"],
+      "#3kwen": ["Donut", "50", "30"]
+    }
+  },
+  "Beverage": {
+    "items": {
+      "#kkeb": ["Filter Coffee", "10", "20"],
+      "#wdkwd": ["Appy Fizz", "20", "20"],
+      "#3kwen": ["Ocean Water", "50", "30"]
+    }
+  }
+}

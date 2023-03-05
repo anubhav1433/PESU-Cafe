@@ -13,14 +13,14 @@
       "#3kwen": ["Paneer Roll", "50", "30"]
     }
   },
-  "Dessert": {
+  "Desserts": {
     "items": {
       "#kkeb": ["Honey Cake", "30", "20"],
       "#wdkwd": ["Choco Lava Cake", "50", "20"],
       "#3kwen": ["Donut", "50", "30"]
     }
   },
-  "Beverage": {
+  "Beverages": {
     "items": {
       "#kkeb": ["Filter Coffee", "10", "20"],
       "#wdkwd": ["Appy Fizz", "20", "20"],

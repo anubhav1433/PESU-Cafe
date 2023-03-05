@@ -9,8 +9,8 @@ export default class App extends React.Component {
       <div className="">
         <ItemContainer title={"Munchies"} id="Munchies" />
         <ItemContainer title={"Snacks"} id="Snacks" />
-        <ItemContainer title={"Dessert"} id="Dessert" />
-        <ItemContainer title={"Beverage"} id="Beverages" />
+        <ItemContainer title={"Desserts"} id="Dessert" />
+        <ItemContainer title={"Beverages"} id="Beverages" />
       </div>
     );
   }

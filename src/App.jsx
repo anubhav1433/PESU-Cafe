@@ -7,11 +7,11 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="">
-        <Navbar />
-        <ItemContainer title={"Munchies"} id="Munchies" />
-        <ItemContainer title={"Snacks"} id="Snacks" />
-        <ItemContainer title={"Desserts"} id="Dessert" />
-        <ItemContainer title={"Beverages"} id="Beverages" />
+        <Navbar items={["Munchies", "Snacks", "Desserts", "Beverages"]} />
+        <ItemContainer title={"Munchies"} id="#Munchies" />
+        <ItemContainer title={"Snacks"} id="#Snacks" />
+        <ItemContainer title={"Desserts"} id="#Dessert" />
+        <ItemContainer title={"Beverages"} id="#Beverages" />
       </div>
     );
   }

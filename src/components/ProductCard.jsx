@@ -33,7 +33,13 @@ export default function ProductCard(props) {
         <p className="text-center text-gray-800 mt-1">{props.itemPrice}</p>
         <div className="inline-flex items-center mt-2">
           <button
-            onClick={() => setCount((prevcount) => prevcount - 1)}
+            onClick={() => {
+              if (count > 0) {
+                setState((prevState) => ({
+                  count: prevState - 1,
+                }));
+              }
+            }}
             className="bg-white rounded-l border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
           >
             <svg

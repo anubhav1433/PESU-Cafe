@@ -1,0 +1,82 @@
+{
+  "Munchies": {
+    "Kurkure": {
+      "itemPrice": 10,
+      "itemQuantity": 20,
+      "available": true,
+      "productImage": "./Assets/img/Food/Munchies/kurkure.jpg"
+    },
+    "Bhel Puri": {
+      "itemPrice": 20,
+      "itemQuantity": 20,
+      "available": true,
+      "productImage": "./Assets/img/Food/Munchies/bhel-puri.jpg"
+    },
+    "Cheeze Maggi": {
+      "itemPrice": 30,
+      "itemQuantity": 30,
+      "available": true,
+      "productImage": "./Assets/img/Food/Munchies/cheeze-maggi.jpg"
+    }
+  },
+  "Snacks": {
+    "Bun Samosa": {
+      "itemPrice": 30,
+      "itemQuantity": 20,
+      "available": true,
+      "productImage": "./Assets/img/Food/Snacks/bun-samosa.jpg"
+    },
+    "Burger": {
+      "itemPrice": 40,
+      "itemQuantity": 20,
+      "available": true,
+      "productImage": "./Assets/img/Food/Snacks/burger.jpg"
+    },
+    "Paneer Roll": {
+      "itemPrice": 50,
+      "itemQuantity": 30,
+      "available": true,
+      "productImage": "./Assets/img/Food/Snacks/paneer-roll.jpg"
+    }
+  },
+  "Desserts": {
+    "Honey Cake": {
+      "itemPrice": 30,
+      "itemQuantity": 20,
+      "available": true,
+      "productImage": "./Assets/img/Food/Desserts/honey-cake.jpg"
+    },
+    "Choco Lava Cake": {
+      "itemPrice": 50,
+      "itemQuantity": 20,
+      "available": true,
+      "productImage": "./Assets/img/Food/Desserts/choco-lava-cake.jpg"
+    },
+    "Donut": {
+      "itemPrice": 50,
+      "itemQuantity": 30,
+      "available": true,
+      "productImage": "./Assets/img/Food/Desserts/donut.jpg"
+    }
+  },
+  "Beverages": {
+    "Filter Coffee": {
+      "itemPrice": 10,
+      "itemQuantity": 20,
+      "available": true,
+      "productImage": "./Assets/img/Food/Beverages/filter-coffee.jpg"
+    },
+    "Appy Fizz": {
+      "itemPrice": 20,
+      "itemQuantity": 20,
+      "available": true,
+      "productImage": "./Assets/img/Food/Beverages/appy-fizz.jpg"
+    },
+    "Ocean Water": {
+      "itemPrice": 50,
+      "itemQuantity": 30,
+      "available": true,
+      "productImage": "./Assets/img/Food/Beverages/ocean-water.jpg"
+    }
+  }
+}

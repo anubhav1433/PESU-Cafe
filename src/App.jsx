@@ -3,11 +3,13 @@ import Navbar from "./components/Navbar.jsx";
 import ItemContainer from "./components/ItemContainer.jsx";
 import Hero from "./components/Hero.jsx";
 import Footer from "./components/Footer.jsx";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
 import "./App.css";
 
 export default function App() {
   const [products, setProducts] = useState("");
-
+  
   const fetchData = () => {
     fetch("/Assets/data.json")
       .then((response) => {
@@ -34,7 +36,9 @@ export default function App() {
     <div className="">
       <Navbar items={["Munchies", "Snacks", "Desserts", "Beverages"]} />
       <Hero />
+      
       {renderItemContainer()}
+      <ToastContainer />
       <Footer />
     </div>
   );

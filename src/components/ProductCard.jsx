@@ -9,7 +9,6 @@ const ProductCard = (props) => {
     : (availableClass = "bg-red-50 p-0.5 border-red-500 text-red-700");
 
   const [count, setCount] = useState(0);
-  console.log(props.productImage);
   return (
     <div className="w-60 bg-white shadow rounded my-4">
       <div
@@ -28,10 +27,15 @@ const ProductCard = (props) => {
         </div>
       </div>
       <div className="p-4 flex flex-col items-center">
-        <h1 className="text-gray-800 text-center mt-1">{props.itemName}</h1>
-        <p className="text-center text-gray-800 mt-1">Rs.{props.itemPrice}</p>
+        <h1 className="text-gray-800 text-md font-semibold text-center mt-1">
+          {props.itemName}
+        </h1>
+        <p className="text-center font-bold text-gray-800 mt-1">
+          Rs.{props.itemPrice}
+        </p>
         <div className="inline-flex items-center mt-2">
-          <button disabled={!props.available}
+          <button
+            disabled={!props.available}
             onClick={() => {
               if (count > 0) {
                 setCount((prevState) => prevState - 1);
@@ -57,8 +61,13 @@ const ProductCard = (props) => {
           <div className="bg-gray-100 border-t border-b border-gray-100 text-gray-600 hover:bg-gray-100 inline-flex items-center px-4 py-1 select-none">
             {count}
           </div>
-          <button disabled={!props.available}
-            onClick={(e) => setCount((prevcount) => prevcount + 1)}
+          <button
+            disabled={!props.available}
+            onClick={(e) => {
+              if (count <= props.itemQuantity) {
+                setCount((prevcount) => prevcount + 1);
+              }
+            }}
             className="bg-white rounded-r border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
           >
             <svg

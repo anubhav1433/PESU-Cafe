@@ -24,6 +24,7 @@ const ItemContainer = (props) => {
   return (
     <div className="mx-16 p-6">
       <p
+        data-aos="zoom-in"
         align="left"
         className="text-4xl m-4 text-gray-800 font-bold hover:text-gray-700"
       >

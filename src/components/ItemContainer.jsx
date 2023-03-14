@@ -3,23 +3,24 @@ import ProductCard from "./ProductCard.jsx";
 import { useEffect, useState } from "react";
 
 const ItemContainer = (props) => {
-  const [products, setProducts] = useState("");
-
-  const fetchData = () => {
-    fetch("/Assets/data.json")
-      .then((response) => {
-        return response.json();
-      })
-
-      .then((data) => {
-        setProducts(data);
-        console.log(products.Munchies);
-      });
+  //renderproductcard method that passes data from props.productData to productCard component
+  const renderProductCard = () => {
+    if (props.productData) {
+      return Object.entries(props.productData).map(
+        ([productName, productData]) => {
+          return (
+            <ProductCard
+              available={productData.available}
+              productImage={`${productData.productImage}`}
+              itemName={productName}
+              itemPrice={productData.itemPrice}
+              itemQuantity={productData.itemQuantity}
+            />
+          );
+        }
+      );
+    }
   };
-  useEffect(() => {
-    fetchData();
-  }, []);
-
   return (
     <div className="mx-16 p-6">
       <p
@@ -28,9 +29,11 @@ const ItemContainer = (props) => {
       >
         {props.title}
       </p>
-      <ProductCard />
+
       <hr />
-      <div className="flex flex-wrap justify-around w-full my-4"></div>
+      <div className="flex flex-wrap justify-around w-full my-4">
+        {renderProductCard()}
+      </div>
     </div>
   );
 };

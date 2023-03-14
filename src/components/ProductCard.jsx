@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
-export default function ProductCard(props) {
+
+const ProductCard = (props) => {
   let available, availableClass;
   props.available ? (available = true) : (available = false);
   available
@@ -8,15 +9,13 @@ export default function ProductCard(props) {
     : (availableClass = "bg-red-50 p-0.5 border-red-500 text-red-700");
 
   const [count, setCount] = useState(0);
-
+  console.log(props.productImage);
   return (
     <div className="w-50 bg-white shadow rounded my-4">
       <div
         className="h-48 w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center rounded-xl"
         style={{
-          backgroundImage: `${
-            props.productImage ? props.productImage : "url('vite.svg')"
-          }`,
+          backgroundImage: `url(${props.productImage})`,
           filter: `grayscale(${available ? 0 : 1})`,
         }}
       >
@@ -30,7 +29,7 @@ export default function ProductCard(props) {
       </div>
       <div className="p-4 flex flex-col items-center">
         <h1 className="text-gray-800 text-center mt-1">{props.itemName}</h1>
-        <p className="text-center text-gray-800 mt-1">{props.itemPrice}</p>
+        <p className="text-center text-gray-800 mt-1">Rs.{props.itemPrice}</p>
         <div className="inline-flex items-center mt-2">
           <button
             onClick={() => {
@@ -100,4 +99,6 @@ export default function ProductCard(props) {
       </div>
     </div>
   );
-}
+};
+
+export default ProductCard;

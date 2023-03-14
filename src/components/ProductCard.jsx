@@ -11,7 +11,7 @@ const ProductCard = (props) => {
   const [count, setCount] = useState(0);
   console.log(props.productImage);
   return (
-    <div className="w-50 bg-white shadow rounded my-4">
+    <div className="w-60 bg-white shadow rounded my-4">
       <div
         className="h-48 w-full bg-gray-200 flex flex-col justify-between p-4 bg-cover bg-center rounded-xl"
         style={{
@@ -31,12 +31,10 @@ const ProductCard = (props) => {
         <h1 className="text-gray-800 text-center mt-1">{props.itemName}</h1>
         <p className="text-center text-gray-800 mt-1">Rs.{props.itemPrice}</p>
         <div className="inline-flex items-center mt-2">
-          <button
+          <button disabled={!props.available}
             onClick={() => {
               if (count > 0) {
-                setState((prevState) => ({
-                  count: prevState - 1,
-                }));
+                setCount((prevState) => prevState - 1);
               }
             }}
             className="bg-white rounded-l border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
@@ -59,8 +57,8 @@ const ProductCard = (props) => {
           <div className="bg-gray-100 border-t border-b border-gray-100 text-gray-600 hover:bg-gray-100 inline-flex items-center px-4 py-1 select-none">
             {count}
           </div>
-          <button
-            onClick={() => setCount((prevcount) => prevcount + 1)}
+          <button disabled={!props.available}
+            onClick={(e) => setCount((prevcount) => prevcount + 1)}
             className="bg-white rounded-r border text-gray-600 hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50 inline-flex items-center px-2 py-1 border-r border-gray-200"
           >
             <svg
@@ -79,7 +77,10 @@ const ProductCard = (props) => {
             </svg>
           </button>
         </div>
-        <button className="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 active:bg-blue-700 disabled:opacity-50 mt-4 w-full flex items-center justify-center">
+        <button
+          disabled={!props.available}
+          className="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 active:bg-blue-700 disabled:opacity-50 mt-4 w-full flex items-center justify-center"
+        >
           Add to Cart
           <svg
             xmlns="http://www.w3.org/2000/svg"

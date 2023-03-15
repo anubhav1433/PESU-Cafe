@@ -72,7 +72,7 @@ export default function Footer(props) {
         </div>
       </div>
 
-      <div className="bg-blue-300 p-4 text-center text-blue-500">
+      <div className="bg-orange-300 p-4 text-center text-orange-500">
         © 2023 Copyright
       </div>
     </footer>

@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 const ProductCard = (props) => {
   let available, availableClass;
@@ -9,6 +10,19 @@ const ProductCard = (props) => {
     : (availableClass = "bg-red-50 p-0.5 border-red-500 text-red-700");
 
   const [count, setCount] = useState(0);
+
+  const notify = () =>
+    toast.success("Item added to cart!", {
+      position: "bottom-left",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
+
   return (
     <div className="w-60 bg-white shadow rounded my-4">
       <div
@@ -87,6 +101,7 @@ const ProductCard = (props) => {
           </button>
         </div>
         <button
+          onClick={notify}
           disabled={!props.available}
           className="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 active:bg-blue-700 disabled:opacity-50 mt-4 w-full flex items-center justify-center"
         >

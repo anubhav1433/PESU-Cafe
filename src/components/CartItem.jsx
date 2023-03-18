@@ -2,14 +2,17 @@ import react from "react";
 import { useState } from "react";
 
 export default function CartItem(props) {
-  const [itemCount, setItemCount] = useState(props.itemQuantity);
+  const [itemCount, setItemCount] = useState(props.itemCount);
+  function removeItem() {
+    props.onRemoveItem(props.itemName);
+  }
   return (
     <li className="flex flex-col py-4 sm:flex-row sm:justify-between">
       <div className="flex w-full space-x-2 sm:space-x-4">
         <img
           className="flex-shrink-0 object-cover w-20 h-20 dark:border-transparent rounded outline-none sm:w-18 sm:h-18 dark:bg-gray-500"
-          src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-1.2.1&amp;ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;auto=format&amp;fit=crop&amp;w=1350&amp;q=80"
-          alt="Polaroid camera"
+          src={props.itemImage}
+          alt={props.itemName}
         />
         <div className="flex flex-col justify-between w-full pb-4">
           <div className="flex justify-between w-full pb-2 space-x-2">
@@ -23,7 +26,7 @@ export default function CartItem(props) {
             </div>
           </div>
           <div className="flex justify-between w-full align-middle">
-            <div className="inline-flex items-center mt-2">
+            <div className="flex items-center mt-2">
               <button
                 onClick={() => {
                   if (itemCount > 0) {
@@ -52,7 +55,7 @@ export default function CartItem(props) {
               </div>
               <button
                 onClick={(e) => {
-                  if (itemCount <= 30) {
+                  if (itemCount <= props.itemQuantity) {
                     setItemCount((prevcount) => prevcount + 1);
                   }
                 }}
@@ -76,6 +79,7 @@ export default function CartItem(props) {
             </div>
             <div className="flex text-sm">
               <button
+                onClick={removeItem}
                 type="button"
                 className="flex items-center pl-0 space-x-1"
               >

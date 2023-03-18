@@ -16,8 +16,14 @@ export const cartSlice = createSlice({
         state.products.push(productData);
       }
     },
-    removeItem: (state) => {
-      state.value -= 1;
+    removeItem: (state, action) => {
+      const itemNameToRemove = action.payload;
+      const existingProductIndex = state.products.findIndex(
+        (p) => p.itemName === itemNameToRemove
+      );
+      if (existingProductIndex >= 0) {
+        state.products.splice(existingProductIndex, 1);
+      }
     },
   },
 });

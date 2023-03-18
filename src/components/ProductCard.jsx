@@ -13,11 +13,11 @@ const ProductCard = (props) => {
 
   const [count, setCount] = useState(0);
   const dispatch = useDispatch();
-  const val = useSelector((state) => state.cart);
   const productData = {
     itemName: props.itemName,
     itemPrice: props.itemPrice,
-    itemQuantity: count,
+    itemCount: count,
+    itemQuantity: props.itemQuantity,
     productImage: props.productImage,
   };
 
@@ -27,7 +27,6 @@ const ProductCard = (props) => {
     toastify("Item Added to Cart!");
   };
 
-  console.log(val);
   return (
     <div className="w-60 bg-white shadow rounded my-4">
       <div

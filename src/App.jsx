@@ -10,7 +10,6 @@ import "./App.css";
 
 export default function App() {
   const [products, setProducts] = useState("");
-  const [showCart, setShowCart] = useState(0);
   const fetchData = () => {
     fetch("/Assets/data.json")
       .then((response) => {
@@ -41,11 +40,8 @@ export default function App() {
   };
   return (
     <div className="">
-      <Navbar
-        items={["Munchies", "Snacks", "Desserts", "Beverages"]}
-        showCart={setShowCart}
-      />
-      <Cart showCart={showCart} />
+      <Navbar items={["Munchies", "Snacks", "Desserts", "Beverages"]} />
+      <Cart />
       <Hero />
       {renderItemContainer()}
       <ToastContainer />

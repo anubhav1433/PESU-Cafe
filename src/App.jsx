@@ -9,7 +9,7 @@ import "./App.css";
 
 export default function App() {
   const [products, setProducts] = useState("");
-  
+
   const fetchData = () => {
     fetch("/Assets/data.json")
       .then((response) => {
@@ -36,7 +36,7 @@ export default function App() {
     <div className="">
       <Navbar items={["Munchies", "Snacks", "Desserts", "Beverages"]} />
       <Hero />
-      
+
       {renderItemContainer()}
       <ToastContainer />
       <Footer />

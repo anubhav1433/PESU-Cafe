@@ -3,7 +3,7 @@
     "Kurkure": {
       "itemPrice": 10,
       "itemQuantity": 20,
-      "available": true,
+      "available": false,
       "productImage": "./Assets/img/Food/Munchies/kurkure.jpg"
     },
     "Bhel Puri": {

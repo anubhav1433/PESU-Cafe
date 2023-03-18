@@ -7,7 +7,7 @@ export default function Hero(props) {
 
       <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
         <div className="max-w-xl text-center sm:text-left">
-          <div className="my-3">
+          <div className="my-5">
             <span className="text-2xl font-bold sm:text-8xl text-orange-500">
               PESU
             </span>

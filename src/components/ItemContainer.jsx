@@ -22,7 +22,7 @@ const ItemContainer = (props) => {
     }
   };
   return (
-    <div className="mx-16 p-6">
+    <div className="mx-16 p-6" id={props.id}>
       <p
         data-aos="zoom-in"
         align="left"

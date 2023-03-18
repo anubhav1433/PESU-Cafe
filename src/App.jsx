@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar.jsx";
 import ItemContainer from "./components/ItemContainer.jsx";
 import Hero from "./components/Hero.jsx";
 import Footer from "./components/Footer.jsx";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 import "./App.css";
 
@@ -19,6 +19,7 @@ export default function App() {
         setProducts(data);
       });
   };
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -27,7 +28,12 @@ export default function App() {
     if (products) {
       return Object.entries(products).map((item) => {
         return (
-          <ItemContainer title={item[0]} id={item[0]} productData={item[1]} />
+          <ItemContainer
+            key={item[0]}
+            title={item[0]}
+            id={item[0]}
+            productData={item[1]}
+          />
         );
       });
     }
@@ -36,7 +42,6 @@ export default function App() {
     <div className="">
       <Navbar items={["Munchies", "Snacks", "Desserts", "Beverages"]} />
       <Hero />
-
       {renderItemContainer()}
       <ToastContainer />
       <Footer />

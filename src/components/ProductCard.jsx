@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
-import { toast } from "react-toastify";
+import toastify from "../lib/toastify.js";
+import { useSelector, useDispatch } from "react-redux";
+import { addItem } from "../lib/CartSlice.js";
 
 const ProductCard = (props) => {
   let available, availableClass;
@@ -10,19 +12,22 @@ const ProductCard = (props) => {
     : (availableClass = "bg-red-50 p-0.5 border-red-500 text-red-700");
 
   const [count, setCount] = useState(0);
+  const dispatch = useDispatch();
+  const val = useSelector((state) => state.cart);
+  const productData = {
+    itemName: props.itemName,
+    itemPrice: props.itemPrice,
+    itemQuantity: count,
+    productImage: props.productImage,
+  };
 
-  const notify = () =>
-    toast.success("Item added to cart!", {
-      position: "bottom-left",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "light",
-    });
+  const addItemToCart = () => {
+    dispatch(addItem(productData));
 
+    toastify("Item Added to Cart!");
+  };
+
+  console.log(val);
   return (
     <div className="w-60 bg-white shadow rounded my-4">
       <div
@@ -101,7 +106,7 @@ const ProductCard = (props) => {
           </button>
         </div>
         <button
-          onClick={notify}
+          onClick={addItemToCart}
           disabled={!props.available || count === 0}
           className="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 active:bg-blue-700 disabled:opacity-50 mt-4 w-full flex items-center justify-center"
         >

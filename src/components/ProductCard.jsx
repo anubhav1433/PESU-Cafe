@@ -102,7 +102,7 @@ const ProductCard = (props) => {
         </div>
         <button
           onClick={notify}
-          disabled={!props.available}
+          disabled={!props.available || count === 0}
           className="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 active:bg-blue-700 disabled:opacity-50 mt-4 w-full flex items-center justify-center"
         >
           Add to Cart

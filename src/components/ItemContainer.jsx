@@ -10,6 +10,7 @@ const ItemContainer = (props) => {
         ([productName, productData]) => {
           return (
             <ProductCard
+              key={productName}
               available={productData.available}
               productImage={`${productData.productImage}`}
               itemName={productName}

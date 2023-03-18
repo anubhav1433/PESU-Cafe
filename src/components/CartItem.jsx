@@ -14,9 +14,7 @@ export default function CartItem(props) {
         <div className="flex flex-col justify-between w-full pb-4">
           <div className="flex justify-between w-full pb-2 space-x-2">
             <div className="space-y-1">
-              <h3 className="text-md leading-snug sm:pr-8">
-                {props.itemName} x {itemCount}
-              </h3>
+              <h3 className="text-md leading-snug sm:pr-8">{props.itemName}</h3>
             </div>
             <div className="text-right">
               <p className="text-lg font-semibold">
@@ -92,7 +90,6 @@ export default function CartItem(props) {
                   <rect width="32" height="200" x="312" y="216"></rect>
                   <path d="M328,88V40c0-13.458-9.488-24-21.6-24H205.6C193.488,16,184,26.542,184,40V88H64v32H448V88ZM216,48h80V88H216Z"></path>
                 </svg>
-                <span>Remove</span>
               </button>
             </div>
           </div>

@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 export default function Navbar(props) {
   const [showNav, setShowNav] = useState(false);
+  const showCart = props.showCart;
   return (
     <nav className="flex items-center justify-between flex-wrap fixed top-0 z-10 w-full bg-white py-4 lg:px-12 shadow border-solid border-t-2 border-blue-900">
       <div className="flex justify-between lg:w-auto w-full lg:border-b-0 pl-6 pr-2 border-solid border-b-2 border-gray-300 pb-5 lg:pb-0">
@@ -63,6 +64,7 @@ export default function Navbar(props) {
           </a>
           <a
             href="#Cart"
+            onClick={() => showCart(1)}
             className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-900 mr-2"
           >
             <svg

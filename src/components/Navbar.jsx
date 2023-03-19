@@ -8,7 +8,7 @@ export default function Navbar(props) {
         <div className="flex  items-center flex-shrink-0 text-gray-800 mr-16">
           <img
             className="w-10 h-10 inline-block m-2"
-            src="./Assets/img/Web/logo.jpg"
+            src="/assets/img/Web/logo.jpg"
           ></img>
           <span className="font-semibold text-2xl tracking-tight">
             PESU Cafe

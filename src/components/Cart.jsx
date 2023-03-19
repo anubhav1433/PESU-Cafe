@@ -25,10 +25,10 @@ export default function Cart(props) {
   return (
     <div>
       <button
-        className="h-18 bg-blue-800 top-1/3 right-0 fixed w-10 rounded-l-md z-20"
+        className="h-18 bg-blue-800 top-1/3 right-0 fixed p-2 rounded-l-md z-20 hover:bg-blue-700"
         onClick={() => setView("visible")}
       >
-        <span className="rotate-90 text-white">Cart Button</span>
+        <i class="uil uil-shopping-cart-alt text-3xl text-white"></i>
       </button>
       <div
         className={`fixed right-0 z-20 flex h-full flex-col py-6 px-2 space-y-4 sm:py-4 sm:px-4 bg-blue-800 text-gray-100 ${view}`}

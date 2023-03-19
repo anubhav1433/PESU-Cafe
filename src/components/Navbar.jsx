@@ -3,12 +3,12 @@ import { useState } from "react";
 export default function Navbar(props) {
   const [showNav, setShowNav] = useState(false);
   return (
-    <nav className="flex items-center justify-between flex-wrap fixed top-0 z-10 w-full bg-white py-4 lg:px-12 shadow border-solid border-t-2 border-blue-900">
+    <nav className="flex items-center justify-between flex-wrap fixed top-0 z-10 w-full bg-white lg:py-4 pt-4 lg:px-12 shadow border-solid border-t-2 border-blue-900">
       <div className="flex justify-between lg:w-auto w-full lg:border-b-0 pl-6 pr-2 border-solid border-b-2 border-gray-300 pb-5 lg:pb-0">
         <div className="flex  items-center flex-shrink-0 text-gray-800 mr-16">
           <img
-            className="w-10 h-10 inline-block m-2"
-            src="./Assets/img/Web/logo.jpg"
+            className="w-10 inline-block m-2"
+            src="assets/img/Web/logo.png"
           ></img>
           <span className="font-semibold text-2xl tracking-tight">
             PESU Cafe
@@ -20,13 +20,7 @@ export default function Navbar(props) {
             onClick={() => setShowNav((prevState) => !prevState)}
             className="flex items-center px-3 py-2 border-2 rounded text-blue-900 border-blue-900 hover:text-blue-900 hover:border-blue-900"
           >
-            <svg
-              className="fill-current h-3 w-3"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-            </svg>
+            <i class="uil uil-bars"></i>
           </button>
         </div>
       </div>

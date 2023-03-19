@@ -9,3 +9,7 @@ html {
   margin: 0 auto;
   text-align: center;
 }
+
+.hero {
+  background-image: url("/assets/img/Web/heroImage.webp");
+}

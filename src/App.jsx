@@ -11,7 +11,7 @@ import "./App.css";
 export default function App() {
   const [products, setProducts] = useState("");
   const fetchData = () => {
-    fetch("/assets/data.json")
+    fetch("assets/data.json")
       .then((response) => {
         return response.json();
       })

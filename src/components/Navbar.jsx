@@ -11,7 +11,7 @@ export default function Navbar({items, showLogin, showUserHandler}) {
             PESU Cafe
           </span>
         </div>
-        <button onClick={()=>{showUserHandler((prev)=>!prev)}}>Login</button>
+        
         <div className="block lg:hidden">
           
           <button
@@ -29,7 +29,9 @@ export default function Navbar({items, showLogin, showUserHandler}) {
           showNav ? "visible" : "hidden"
         } lg:visible w-full lg:flex justify-end lg:w-auto lg:px-3 px-8`}
       >
+        
         <div className="text-md font-bold text-blue-900 lg:flex-grow">
+          <div className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-900 mr-2"><button onClick={()=>{showUserHandler((prev)=>!prev)}}>Login</button></div>
           <a
             href="#Munchies"
             className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-900 mr-2"

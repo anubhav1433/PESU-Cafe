@@ -3,13 +3,13 @@
     "Kurkure": {
       "itemPrice": 10,
       "itemQuantity": 20,
-      "available": false,
+      "available": true,
       "productImage": "./img/Food/Munchies/kurkure.jpg"
     },
     "Bhel Puri": {
       "itemPrice": 20,
       "itemQuantity": 20,
-      "available": true,
+      "available": false,
       "productImage": "./img/Food/Munchies/bhel-puri.jpg"
     },
     "Cheeze Maggi": {
@@ -49,7 +49,7 @@
     "Choco Lava Cake": {
       "itemPrice": 50,
       "itemQuantity": 20,
-      "available": true,
+      "available": false,
       "productImage": "./img/Food/Desserts/choco-lava-cake.jpg"
     },
     "Donut": {

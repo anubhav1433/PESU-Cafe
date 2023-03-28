@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-export default function Navbar(props) {
+export default function Navbar({items, showLogin, showUserHandler}) {
   const [showNav, setShowNav] = useState(false);
   return (
     <nav className="flex items-center justify-between flex-wrap fixed top-0 z-10 w-full bg-white lg:py-4 pt-4 lg:px-12 shadow border-solid border-t-2 border-blue-900">
@@ -11,7 +11,9 @@ export default function Navbar(props) {
             PESU Cafe
           </span>
         </div>
+        <button onClick={()=>{showUserHandler((prev)=>!prev)}}>Login</button>
         <div className="block lg:hidden">
+          
           <button
             id="nav"
             onClick={() => setShowNav((prevState) => !prevState)}

@@ -1,0 +1,8 @@
+.UserHandler{
+    background-color: white;
+    position: fixed;
+    z-index:100;
+    top:35%;
+    left:35%;
+    display: inline-block;
+}

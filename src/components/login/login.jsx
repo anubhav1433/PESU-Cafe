@@ -36,7 +36,7 @@ const Login = ({ setLoginUser }) => {
             <h2>Login</h2>
             <input type="text" name="email" value={user.email} onChange={handleChange} placeholder="Enter your Email"></input>
             <input type="password" name="password" value={user.password} onChange={handleChange} placeholder="Enter your Password" ></input>
-          
+            
         </div>
         </div>
    

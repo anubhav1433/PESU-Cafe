@@ -5,7 +5,7 @@ export default function Footer(props) {
     <footer className="bg-blue-200 text-center text-white">
       <div className="pt-9">
         <div className="mb-9 flex w-full justify-center">
-          <a href="#!" className="mr-9 text-blue-800">
+          <a href="https://www.linkedin.com/in/anubhav-mendhiratta/" className="mr-9 text-blue-800">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-4 w-4"

@@ -1,42 +1,66 @@
 {
-  "Munchies": {
-    "Kurkure": {
-      "itemPrice": 10,
+  "Sandwich": {
+    "Veg-Grilled Sandwich": {
+      "itemPrice": 50,
       "itemQuantity": 20,
       "available": true,
-      "productImage": "./img/Food/Munchies/kurkure.jpg"
+      "productImage": "./img/Food/Sandwich/veg_grilled.webp"
     },
-    "Bhel Puri": {
-      "itemPrice": 20,
-      "itemQuantity": 20,
-      "available": false,
-      "productImage": "./img/Food/Munchies/bhel-puri.jpg"
-    },
-    "Cheeze Maggi": {
-      "itemPrice": 30,
+    "Tomato-Grilled Sandwich": {
+      "itemPrice": 60,
       "itemQuantity": 30,
       "available": true,
-      "productImage": "./img/Food/Munchies/cheese-maggi.jpg"
+      "productImage": "./img/Food/Sandwich/tomato_grilled.jpg"
+    },
+    "Cucumber-Grilled Sandwich": {
+      "itemPrice": 60,
+      "itemQuantity": 30,
+      "available": false,
+      "productImage": "./img/Food/Sandwich/cucumber_grilled.jpg"
+    },
+    "Paneer-Grilled Sandwich": {
+      "itemPrice": 70,
+      "itemQuantity": 20,
+      "available": true,
+      "productImage": "./img/Food/Sandwich/paneer_grilled.jpg"
+    },
+    "Corn-Grilled Sandwich": {
+      "itemPrice": 70,
+      "itemQuantity": 30,
+      "available": true,
+      "productImage": "./img/Food/Sandwich/corn_grilled.jpg"
     }
   },
   "Snacks": {
+    "Veg Puff": {
+      "itemPrice": 15,
+      "itemQuantity": 30,
+      "available": true,
+      "productImage": "./img/Food/Snacks/veg_puff.jpg"
+    },
+    "Egg Puff": {
+      "itemPrice": 20,
+      "itemQuantity": 30,
+      "available": true,
+      "productImage": "./img/Food/Snacks/egg_puff.jpg"
+    },
+    "Paneer Puff": {
+      "itemPrice": 20,
+      "itemQuantity": 30,
+      "available": true,
+      "productImage": "./img/Food/Snacks/paneer_puff.jpg"
+    },
     "Bun Samosa": {
-      "itemPrice": 30,
+      "itemPrice": 25,
       "itemQuantity": 20,
       "available": true,
       "productImage": "./img/Food/Snacks/bun-samosa.jpg"
     },
-    "Burger": {
-      "itemPrice": 40,
+    "Veg-Maggie": {
+      "itemPrice": 30,
       "itemQuantity": 20,
       "available": true,
-      "productImage": "./img/Food/Snacks/burger.jpg"
-    },
-    "Paneer Roll": {
-      "itemPrice": 50,
-      "itemQuantity": 30,
-      "available": true,
-      "productImage": "./img/Food/Snacks/paneer-roll.jpg"
+      "productImage": "./img/Food/Snacks/veg_maggie.jpg"
     }
   },
   "Desserts": {
@@ -45,6 +69,12 @@
       "itemQuantity": 20,
       "available": true,
       "productImage": "./img/Food/Desserts/honey-cake.jpg"
+    },
+    "Pastry": {
+      "itemPrice": 40,
+      "itemQuantity": 30,
+      "available": true,
+      "productImage": "./img/Food/Desserts/pastry.jpg"
     },
     "Choco Lava Cake": {
       "itemPrice": 50,
@@ -57,26 +87,44 @@
       "itemQuantity": 30,
       "available": true,
       "productImage": "./img/Food/Desserts/donut.jpg"
-    }
-  },
-  "Beverages": {
-    "Filter Coffee": {
-      "itemPrice": 10,
-      "itemQuantity": 20,
-      "available": true,
-      "productImage": "./img/Food/Beverages/filter-coffee.jpg"
     },
-    "Appy Fizz": {
-      "itemPrice": 20,
-      "itemQuantity": 20,
-      "available": true,
-      "productImage": "./img/Food/Beverages/appy-fizz.jpg"
-    },
-    "Ocean Water": {
+    "Brownie": {
       "itemPrice": 50,
       "itemQuantity": 30,
+      "available": false,
+      "productImage": "./img/Food/Desserts/brownie.jpg"
+    }
+  },
+  "Chaat": {
+    "Peanut Chaat": {
+      "itemPrice": 20,
+      "itemQuantity": 30,
       "available": true,
-      "productImage": "./img/Food/Beverages/ocean-water.jpg"
+      "productImage": "./img/Food/chaat/peanut.jpg"
+    },
+    "Bhel Puri": {
+      "itemPrice": 30,
+      "itemQuantity": 20,
+      "available": true,
+      "productImage": "./img/Food/chaat/bhel-puri.jpg"
+    },
+    "Dahi Kachori": {
+      "itemPrice": 30,
+      "itemQuantity": 20,
+      "available": true,
+      "productImage": "./img/Food/chaat/dahi_kachori.jpg"
+    },
+    "Dahi Samosa": {
+      "itemPrice": 30,
+      "itemQuantity": 30,
+      "available": true,
+      "productImage": "./img/Food/chaat/dahi_samosa.jpg"
+    },
+    "Nippet Masala": {
+      "itemPrice": 30,
+      "itemQuantity": 30,
+      "available": true,
+      "productImage": "./img/Food/chaat/nippet_masala.jpg"
     }
   }
 }

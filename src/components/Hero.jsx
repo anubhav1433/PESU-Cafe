@@ -29,7 +29,7 @@ export default function Hero(props) {
           </div>
           <div className="mt-8 flex flex-wrap text-center ">
             <a
-              href="#Munchies"
+              href="#Sandwich"
               className="block w-full rounded bg-blue-800 px-12 py-3 text-lg font-medium text-white shadow hover:bg-blue-900 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
             >
               Order Now

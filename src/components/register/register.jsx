@@ -47,7 +47,7 @@ const Register = () => {
             <input type="phone" name="contact" value={user.contact} placeholder="Contact Number" onChange={handleChange}></input>
             <input type="password" name="password" value={user.password} placeholder="Your Password" onChange={handleChange}></input>
             <input type="password" name="reEnterPassword" value={user.reEnterPassword} placeholder="Re-enter Password" onChange={handleChange}></input>
-       
+
         </div>
     )
 }

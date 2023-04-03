@@ -43,10 +43,10 @@ export default function App() {
   };
   return (
     <div className="">
-      <Navbar items={["Munchies", "Snacks", "Desserts", "Beverages"]} showUserHandler={setShowUserHandler}/>
-      {showUserHandler && <UserHandler/>}
+      <Navbar items={["Sandwich", "Snacks", "Desserts", "Chaat"]} showUserHandler={setShowUserHandler} />
+      {showUserHandler && <UserHandler />}
       <Cart />
-      <Hero />  
+      <Hero />
       {renderItemContainer()}
       <ToastContainer />
       <Footer />

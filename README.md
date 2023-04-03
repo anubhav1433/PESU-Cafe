@@ -25,5 +25,8 @@ React-Js<br>
 Tailwind CSS<br>
 Redux<br>
 ViteJs<br>
+ExpressJs<br>
+NodeJs<br>
+MongoDB
 <hr>
 Please show your love by starring it.🙂

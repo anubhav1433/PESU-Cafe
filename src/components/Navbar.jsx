@@ -45,16 +45,16 @@ export default function Navbar({ items, showLogin, showUserHandler }) {
             Snacks
           </a>
           <a
-            href="#Desserts"
-            className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-900 mr-2"
-          >
-            Desserts
-          </a>
-          <a
             href="#Chaat"
             className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-900 mr-2"
           >
             Chaat
+          </a>
+          <a
+            href="#Desserts"
+            className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-900 mr-2"
+          >
+            Desserts
           </a>
         </div>
       </div>

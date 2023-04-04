@@ -33,6 +33,12 @@ export default function Navbar({ items, showLogin, showUserHandler }) {
         <div className="text-md font-bold text-blue-900 lg:flex-grow">
           <div className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-900 mr-2"><button onClick={() => { showUserHandler((prev) => !prev) }}>Login</button></div>
           <a
+            href="#"
+            className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-900 mr-2"
+          >
+            Home
+          </a>
+          <a
             href="#Sandwich"
             className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-900 mr-2"
           >

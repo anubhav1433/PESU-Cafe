@@ -8,7 +8,7 @@ export default function Navbar({ items, showLogin, showUserHandler }) {
         <div className="flex  items-center flex-shrink-0 text-gray-800 mr-16">
           <a href="/"> <img className="w-10 inline-block m-2" src="./img/Web/logo.png"></img></a>
           <span className="font-semibold text-2xl tracking-tight">
-            <a href="/">
+            <a href="#">
               PESU Cafe</a>
           </span>
         </div>

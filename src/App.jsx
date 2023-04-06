@@ -9,6 +9,7 @@ import UserHandler from "./components/userHandler/UserHandler"
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 import "./App.css";
+import Contact from "./components/Contact.jsx";
 
 export default function App() {
   const [products, setProducts] = useState("");
@@ -43,12 +44,13 @@ export default function App() {
   };
   return (
     <div className="">
-      <Navbar items={["Sandwich", "Snacks", "Desserts", "Chaat"]} showUserHandler={setShowUserHandler} />
+      <Navbar items={["Sandwich", "Snacks", "Desserts", "Chaat","Contact"]} showUserHandler={setShowUserHandler} />
       {showUserHandler && <UserHandler />}
       <Cart />
       <Hero />
       {renderItemContainer()}
       <ToastContainer />
+      <Contact />
       <Footer />
     </div>
   );

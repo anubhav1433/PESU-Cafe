@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import Contact from "./Contact";
 export default function Navbar({ items, showLogin, showUserHandler }) {
   const [showNav, setShowNav] = useState(false);
   return (
@@ -44,12 +45,7 @@ export default function Navbar({ items, showLogin, showUserHandler }) {
           >
             Menu
           </a>
-          <a
-            href="#Chaat"
-            className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-900 mr-2"
-          >
-            Contact
-          </a>
+          <div className="block mt-4 lg:inline-block lg:mt-0 hover:text-white px-4 py-2 rounded hover:bg-blue-900 mr-2"><button onClick={() => { window.scrollTo({ top: 10000, behavior: "smooth" }) }}>Contact</button></div>
         </div>
       </div>
     </nav>
